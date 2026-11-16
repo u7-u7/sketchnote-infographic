@@ -67,17 +67,14 @@ npx --yes skills@1.8.1 add u7-u7/sketchnote-infographic --list
 # 查看当前项目已安装的技能
 npx --yes skills@1.8.1 list
 
-# 检查已安装技能的更新
-npx --yes skills@1.8.1 check
-
-# 更新已安装的技能
-npx --yes skills@1.8.1 update
+# 更新当前项目中的本 skill
+npx --yes skills@1.8.1 update sketchnote-infographic --project --yes
 
 # 从当前项目移除本 skill
 npx --yes skills@1.8.1 remove sketchnote-infographic --agent codex claude-code --yes
 ```
 
-全局安装的技能，查看或移除时加 `--global`。`update` 会检查并更新安装器管理的技能，执行前按输出核对范围。
+全局安装的技能，查看或移除时加 `--global`；更新时将 `--project` 替换成 `--global`。
 
 ## 文件
 
